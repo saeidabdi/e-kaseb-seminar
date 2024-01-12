@@ -6,11 +6,6 @@ import { Test } from './entities/test.entity';
 
 @Module({
   imports: [
-    // TypeOrmModule.forRoot({
-    //   // ... (previous TypeORM config)
-    //   entities: [Test],
-    //   synchronize: true,
-    // }),
     TypeOrmModule.forFeature([Test]),
   ],
   controllers: [TestController],
